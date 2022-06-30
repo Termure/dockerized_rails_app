@@ -1,5 +1,7 @@
 FROM ruby:3.0
 
+LABEL maintainer="ioan.termure24@gmail.com"
+
 RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
     nodejs
 
