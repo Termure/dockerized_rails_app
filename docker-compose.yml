@@ -7,6 +7,17 @@ services:
       - "3000:3000"
     volumes:
       - .:/usr/src/app
+    env_file:
+      - .env/development/database
+      - .env/development/web
+    depends_on:
+      - database
 
   redis:
     image: redis
+
+  database:
+    image: postgres
+    env_file:
+      - .env/development/database
+
