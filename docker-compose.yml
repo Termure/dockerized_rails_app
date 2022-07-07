@@ -16,6 +16,8 @@ services:
 
   redis:
     image: redis
+    volumes:
+      - ./redis-volume:/data
 
   database:
     image: postgres
