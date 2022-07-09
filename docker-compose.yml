@@ -18,7 +18,7 @@ services:
   redis:
     image: redis
     volumes:
-      - ./redis-volume:/data
+      - redis_volume:/data
 
   database:
     image: postgres
@@ -36,5 +36,6 @@ services:
 
 volumes:
   db_data:
+  redis_volume:
   gem_cache:
 
