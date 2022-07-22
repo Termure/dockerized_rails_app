@@ -1,0 +1,3 @@
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=Admin123!
+POSTGRES_DB=dockerized_rails_app_production
